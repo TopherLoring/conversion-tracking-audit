@@ -1,0 +1,8 @@
+transaction_id,value,currency,timestamp,source,event_name
+ORD-1001,149.00,USD,2026-10-20T14:22:10Z,google_ads,purchase
+ORD-1002,89.50,USD,2026-10-20T15:01:08Z,google_ads,purchase
+ORD-1003,199.00,USD,2026-10-20T16:44:15Z,google_ads,purchase
+ORD-1004,45.00,USD,2026-10-21T09:12:09Z,google_ads,purchase
+ORD-1005,310.75,USD,2026-10-21T11:30:12Z,google_ads,purchase
+ORD-1007,180.00,USD,2026-10-22T08:40:10Z,google_ads,purchase
+ORD-1008,120.00,USD,2026-10-22T10:15:10Z,google_ads,purchase

@@ -1,0 +1,5 @@
+# Baseline audit — conversion tracking
+
+Observed 2026-10-28: `python demo.py` returned 0, processing 26 synthetic records and producing eight findings. It asserts only three broad finding types. Python requirements specify rich>=13 unpinned, not installed; demo runs without it.
+
+Loader and comparison logic are tailored to synthetic flat CSVs, not validated real exports. Richest source is assumed to be a reference, missing platform records are treated as under-reporting, and differences can reflect attribution or reporting windows. Values use floating point and overwrite duplicates; currency, refunds, partial payments, source row provenance, time zones, mapping and uncertain matches lack adequate safeguards. Consent field can trigger an unsupported implication about consent expectations. Sensitive transaction IDs are printed in reports. No structured verification status, report redaction, formal retention, robust HTML output or real-format benchmark. $500 is buyer-budget-supported, not a confirmed sale. One-to-two-day and active-time promises are unvalidated. Do not use output as a client-ready report.
